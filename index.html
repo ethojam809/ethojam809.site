@@ -6,18 +6,32 @@
 </head>
 <body>
 
-    <button>hello</button>
-    
-    <h1>hello</h1>
-    
-    <p>this is just a place holder because i wanted to make something else</p>
-    
-    <h3>things i want to add</h3>
-    <ul>    
-        <li>material 3 expressive</li>
-        <li>my friends</li>
-        <li>and Floccinaucinihilipilification</li>
-    </ul>
+     <!-- 1. Added an id to the button so JavaScript can find it -->
+     <button id="soundButton">hello</button>
+     
+     <h1>hello</h1>
+     
+     <p>this is just a place holder because i wanted to make something else</p>
+     
+     <h3>things i want to add</h3>
+     <ul>
+         <li>material 3 expressive</li>
+         <li>my friends</li>
+         <li>and Floccinaucinihilipilification</li>
+     </ul>
+
+     <!-- 2. This JavaScript handles loading and playing the sound -->
+     <script>
+         const button = document.getElementById('soundButton');
+         
+         // Replace '.mp3' with your actual file extension (like .wav or .ogg) if needed
+         const audio = new Audio('sounds/yes.mp3'); 
+
+         button.addEventListener('click', () => {
+             audio.currentTime = 0; // Rewinds to the start so you can click rapidly
+             audio.play();
+         });
+     </script>
 
 </body>
 </html>
