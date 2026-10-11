@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 
 body {
-    background-color: lightgray;
-    
-.doto-<uniquifier> {
-  font-family: "Doto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
+   background-color: lightgray;
+   .doto-<uniquifier> 
+   font-family: "Doto", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: <weight>;
+   font-style: normal;
+   font-variation-settings:
     "ROND" 0;
 }
 }
