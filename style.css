@@ -8,3 +8,13 @@ body {
     font-style: normal;
     font-variation-settings: "ROND" 110;
 }
+button {
+    padding: 10px 16px; /* space inside the button */
+    border-radius: 10px; /* rounds the corners */
+    border: 1px solid #777; /* gives it an outline */
+    background-color: white; /* button color */
+    color: #222; /* text color */
+    font-family: inherit; /* uses your Doto font */
+    cursor: pointer; /* cursor becomes a hand */
+    
+}
