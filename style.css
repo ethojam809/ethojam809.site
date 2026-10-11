@@ -16,5 +16,8 @@ button {
     color: #222; /* text color */
     font-family: inherit; /* uses your Doto font */
     cursor: pointer; /* cursor becomes a hand */
-    
+     
+}
+button:hover {
+    background-color: #e7e7e7;
 }
