@@ -16,14 +16,10 @@ button {
     color: #222; /* text color */
     font-family: inherit; /* uses your Doto font */
     cursor: pointer; /* cursor becomes a hand */
-     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 button:hover {
     background-color: #CFFFEF;
 
-}
-    
-button:box-shadow {
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
 }
