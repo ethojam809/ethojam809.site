@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
 body {
-    background-color: green !important;
-    font-family: 'Anta', sans-serif;
+    background-color: lightgray;
+    font-family: "Anta", sans-serif;
 }
