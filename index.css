@@ -1,13 +1,4 @@
-/* 1. Define the web font directly from the file source */
-@font-face {
-  font-family: 'Anta';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://gstatic.com) format('truetype');
-}
-
-/* 2. Apply it to your website */
 body {
-  font-family: 'Anta', sans-serif;
+    background-color: red !important;
+    font-family: 'Anta', sans-serif;
 }
