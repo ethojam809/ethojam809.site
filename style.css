@@ -9,7 +9,7 @@ body {
     font-variation-settings: "ROND" 110;
 }
 button {
-    padding: 10px 16px; /* space inside the button */
+    padding: 5px 8px; /* space inside the button */
     border-radius: 10px; /* rounds the corners */
     border: 1px solid #777; /* gives it an outline */
     background-color: white; /* button color */
