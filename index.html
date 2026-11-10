@@ -149,7 +149,7 @@
              });
          });
      </script>
-    <script>
+<script>
 function startCleanVideo() {
     var img = document.getElementById('gifImage');
     var video = document.getElementById('cleanVideo');
@@ -157,6 +157,15 @@ function startCleanVideo() {
     img.style.display = 'none';    // Instantly hides the GIF
     video.style.display = 'block'; // Instantly shows the player
     video.play();                  // Forces the video to play automatically
+    
+    // Forces the video to open automatically in full screen
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { /* Safari / Older Chrome */
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { /* IE11 */
+        video.msRequestFullscreen();
+    }
 }
 </script>
 </body>
