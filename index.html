@@ -180,7 +180,7 @@ function triggerDeltaruneExplosion() {
     img.src = "assets/explosion.gif"; // Make sure to name your explosion file exactly what it is called in your folder!
     
     // 2. Hide the image completely after 600 milliseconds (adjust this time to match your explosion GIF's duration)
-    setTimeout(function() {
+    setTimeout(function(600) {
         img.style.visibility = 'hidden'; // Keeps the table cell structure but makes the image completely invisible
     }, 600); 
 }
