@@ -123,10 +123,7 @@
       <td>
           <input type="radio"name="lstatus" value="expo"/>explosion
       </td>
-      <td>
-    <!-- The clickable image that swaps to the explosion -->
-    <img id="tennaImage" src="assets/tennadance.gif" width="256" height="256" style="cursor:pointer; display:block;" onclick="triggerDeltaruneExplosion()">
-</td>
+      <td></td>
     </tr>
   </table>
 <form>
@@ -172,18 +169,5 @@ function startCleanVideo() {
 }
 </script>
 
-<script>
-function triggerDeltaruneExplosion() {
-    var img = document.getElementById('tennaImage');
-    
-    // 1. Swap the dancer GIF out for the explosion GIF instantly
-    img.src = "assets/explosion.gif"; // Make sure to name your explosion file exactly what it is called in your folder!
-    
-    // 2. Hide the image completely after 600 milliseconds (adjust this time to match your explosion GIF's duration)
-    setTimeout(function(600) {
-        img.style.visibility = 'hidden'; // Keeps the table cell structure but makes the image completely invisible
-    }, 600); 
-}
-</script>
 </body>
 </html>
