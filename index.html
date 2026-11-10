@@ -28,10 +28,30 @@
          <li>and Floccinaucinihilipilification</li>
      </ul>
 
-    <p>
-    <video width="121" height="276" poster="assets/tenna.gif" controls>
-    <source src="assets/featurepresentation.webm" type="video/webm">
+    <p><!-- Container matching your exact dimensions -->
+<div style="width:121px; height:276px; position:relative;">
+    
+    <!-- The clickable starting image -->
+    <img id="gifImage" src="assets/tenna.gif" width="121" height="276" style="cursor:pointer; display:block;" onclick="startCleanVideo()">
+
+    <!-- Your updated local video player (hidden until clicked) -->
+    <video id="cleanVideo" width="121" height="276" controls style="display:none;">
+        <source src="assets/featurepresentation.webm" type="video/webm">
+        Your browser does not support the video tag.
     </video>
+
+</div>
+
+<script>
+function startCleanVideo() {
+    var img = document.getElementById('gifImage');
+    var video = document.getElementById('cleanVideo');
+    
+    img.style.display = 'none';    // Instantly hides the GIF
+    video.style.display = 'block'; // Instantly shows the player
+    video.play();                  // Forces the video to play automatically
+}
+</script>
     <img src="https://thumb.wikimedia.org/wikipedia/en/thumb/3/37/Kris_Deltarune.svg/250px-Kris_Deltarune.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" width="250" height="487">
     <img src="assets/cat.jpeg" width="157" height="148">    
     </p>
