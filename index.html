@@ -41,8 +41,7 @@
     </video>
 
 </div>
-    <img src="https://thumb.wikimedia.org/wikipedia/en/thumb/3/37/Kris_Deltarune.svg/250px-Kris_Deltarune.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" width="250" height="487">
-    <img src="assets/cat.jpeg" width="157" height="148">    
+    <img id="tennaImage" src="assets/tennadance.gif" width="256" height="256" style="cursor:pointer; display:block;" onclick="triggerDeltaruneExplosion()"> 
     </p>
 
 <form name="fav deltarune characeter" action="send.php" method="post">
@@ -168,6 +167,18 @@ function startCleanVideo() {
     }
 }
 </script>
-
+<script>
+function triggerDeltaruneExplosion() {
+    var img = document.getElementById('tennaImage');
+    
+    // 1. Swap the dancer GIF out for your explosion GIF instantly
+    img.src = "assets/explosion.gif"; 
+    
+    // 2. Erase the image completely from the page after 600 milliseconds
+    setTimeout(function() {
+        img.style.display = 'none'; // Completely removes the image so text moves up naturally
+    }, 600); 
+}
+</script>
 </body>
 </html>
